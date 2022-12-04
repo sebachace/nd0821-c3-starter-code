@@ -1,4 +1,6 @@
-# To start the server use the cmd to type: uvicorn main:app --reload
+'''
+To start the server use the cmd to type: uvicorn main:app --reload
+'''
 
 # Put the code for your API here.
 import os
@@ -8,7 +10,8 @@ import pandas as pd
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import List
-# Import the inference function to be used to predict the values
+
+# Inference function import
 from starter.starter.ml.model import inference
 from starter.starter.ml.data import process_data
 
